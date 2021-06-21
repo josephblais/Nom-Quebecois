@@ -5,7 +5,7 @@ const surnames = ['Tremblay', 'Roy', 'Gauthier', 'Bélanger', 'Pelletier', 'Berg
 const wildCards = ['Caisse Populaire Desjardins', 'Guy A. Lepage', 'Chicoutimi Steve', 'Sloche', 'Radio NRJ', 'Sauce Brune']
 
 const cutToFirstVowel = (name) => {
-  const vowels = ['a','e','i','o','u']
+  const vowels = ['a','e','i','o','u', 'é', 'è', 'ê', 'ì']
   let splicedName = ''
 
   for (let char of name) {
