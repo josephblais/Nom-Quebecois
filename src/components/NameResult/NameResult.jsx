@@ -11,7 +11,7 @@ export default function NameResult({name, setShowQueb}) {
       <Button text={"Encore!"}></Button>
       <Button 
         text={"Recommencer"}
-        onClick={assTest}
+        click={assTest}
         ></Button>
     </div>
     </>

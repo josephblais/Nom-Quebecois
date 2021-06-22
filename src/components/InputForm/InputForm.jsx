@@ -12,7 +12,6 @@ export default function InputForm({name, setName, setShowQueb}) {
       ...name,
       [e.target.name]: e.target.value
     })
-    console.log(name)
   }
   
   const handleSubmit = e => {
