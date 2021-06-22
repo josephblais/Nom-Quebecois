@@ -22,7 +22,6 @@ export default function InputForm({name, setName, setShowQueb}) {
       quebName: setQuebName(name.prenom, name.nomDeFamille)
     })
     setShowQueb(true)
-    console.log(name)
   }
   
 
@@ -48,6 +47,7 @@ export default function InputForm({name, setName, setShowQueb}) {
       <Button
       type="submit"
       text={'Awaye donc!'}
+      setShowQueb={setShowQueb()}
       />
     </form>
   )
