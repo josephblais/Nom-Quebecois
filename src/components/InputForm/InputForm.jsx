@@ -29,7 +29,8 @@ export default function InputForm({name, setName, setShowQueb}) {
       <h1>Trouvez votre nom Québecois</h1>
       <label>
         Prénom:
-        <textarea 
+        <input
+          type="text" 
           name="prenom"
           placeholder="Prénom"
           onChange={handleChange}
@@ -37,7 +38,8 @@ export default function InputForm({name, setName, setShowQueb}) {
       </label>
       <label>
         Nom de famille:
-        <textarea
+        <input
+          type="text"
           name="nomDeFamille"
           placeholder="Nom de famille"
           onChange={handleChange}

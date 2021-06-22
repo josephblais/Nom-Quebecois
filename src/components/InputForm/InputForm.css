@@ -11,15 +11,16 @@ label {
   justify-content: space-between;
   align-items: center;
   text-align: right;
+  padding-bottom: 5px;
 }
 
-textarea {
+input {
   width: 60%;
   height: 2em;
   margin-left: 2em;
   border: none;
-  border-radius: 5px;
-  resize: none;
+  /* border-radius: 5px; */
+  /* resize: none; */
   font-family: 'Segoe UI', sans-serif;
 }
 

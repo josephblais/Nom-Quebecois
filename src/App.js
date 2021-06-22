@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <img alt={"Queb Logo"} src={"../public/signature-PIV.svg"}></img>
     {!showQueb && <InputForm
       name={name}
       setName={setName}
