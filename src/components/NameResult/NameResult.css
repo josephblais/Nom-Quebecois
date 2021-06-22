@@ -1,0 +1,4 @@
+.twoButtons {
+  display: flex;
+  flex-direction: column;
+}
