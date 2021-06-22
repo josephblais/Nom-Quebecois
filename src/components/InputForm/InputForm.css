@@ -8,11 +8,21 @@
 
 label {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  align-items: center;
   text-align: right;
 }
 
 textarea {
   width: 60%;
+  height: 2em;
   margin-left: 2em;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+textarea:focus {
+  outline: none;
 }

@@ -33,6 +33,7 @@ export default function InputForm({name, setName, setShowQueb}) {
         Prénom:
         <textarea 
           name="prenom"
+          placeholder="Prénom"
           onChange={handleChange}
         />
       </label>
@@ -40,6 +41,7 @@ export default function InputForm({name, setName, setShowQueb}) {
         Nom de famille:
         <textarea
           name="nomDeFamille"
+          placeholder="Nom de famille"
           onChange={handleChange}
         />
       </label>
