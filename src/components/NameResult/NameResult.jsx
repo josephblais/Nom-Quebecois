@@ -1,17 +1,31 @@
 import Button from "../Button/Button"
+import { setQuebName } from "../../helpers/setQuebName"
+import { useEffect } from "react"
 
-export default function NameResult({name, setShowQueb}) {
+export default function NameResult({name, setName, setShowQueb}) {
 
-  const assTest = () => console.log("Ass")
+  const refreshName = () => {
+    setName({
+      ...name,
+      quebName: setQuebName(name.prenom, name.nomDeFamille)
+    })
+  }
+
+  const clearName = () => {
+    setShowQueb(false)
+  }
 
   return (
     <>
-    <h1>Tu t'appelles: {name}</h1>
+    <h1>Tu t'appelles: {name.quebName}</h1>
     <div className="twoButtons">
-      <Button text={"Encore!"}></Button>
+      <Button 
+      text={"Encore!"}
+      click={refreshName}
+      ></Button>
       <Button 
         text={"Recommencer"}
-        click={assTest}
+        click={clearName}
         ></Button>
     </div>
     </>

@@ -18,7 +18,12 @@ function App() {
       setName={setName}
       setShowQueb={setShowQueb}
     ></InputForm>}
-    {showQueb && <NameResult name={name.quebName}/>}
+    {showQueb && 
+      <NameResult 
+        name={name}
+        setName={setName}
+        setShowQueb={setShowQueb}
+        />}
     </div>
     );
   }
