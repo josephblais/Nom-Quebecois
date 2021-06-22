@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import InputForm from './components/InputForm/InputForm';
+import NameResult from './components/NameResult/NameResult';
 
 function App() {
   const [name, setName] = useState({
@@ -12,12 +13,12 @@ function App() {
 
   return (
     <div className="App">
-    <InputForm
+    {!showQueb && <InputForm
       name={name}
       setName={setName}
       setShowQueb={setShowQueb}
-    ></InputForm>
-    {showQueb && <h2>Tu t'appelles: {name.quebName}</h2>}
+    ></InputForm>}
+    {showQueb && <NameResult name={name.quebName}/>}
     </div>
     );
   }
