@@ -14,7 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <img alt={"Queb Logo"} src={logo}/>
+        <img 
+          alt={"Drapeau du Québec"}
+          src={logo}
+          className="flag"
+          />
     {!showQueb && <InputForm
       name={name}
       setName={setName}

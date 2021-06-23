@@ -18,7 +18,7 @@ export default function NameResult({name, setName, setShowQueb}) {
 
   return (
     <>
-    <h1>Tu t'appelles: {name.quebName}</h1>
+    <h1>Tu t'appelles: <br/><span id="queb-name">{name.quebName}</span></h1>
     <div className="twoButtons">
       <Button 
       text={"Encore!"}
