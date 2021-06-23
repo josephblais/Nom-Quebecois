@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import InputForm from './components/InputForm/InputForm';
 import NameResult from './components/NameResult/NameResult';
+import logo from "./drapeau-quebec.gif"
 
 function App() {
   const [name, setName] = useState({
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <img alt={"Queb Logo"} src={"../public/signature-PIV.svg"}></img>
+      <img alt={"Queb Logo"} src={logo}/>
     {!showQueb && <InputForm
       name={name}
       setName={setName}
