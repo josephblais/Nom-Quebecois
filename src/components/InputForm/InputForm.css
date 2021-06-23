@@ -1,7 +1,6 @@
 .InputForm {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
   width: 80vw;
   font-size: 2em;
   z-index: 1;
@@ -20,8 +19,6 @@ input {
   height: 2em;
   margin-left: 2em;
   border: none;
-  /* border-radius: 5px; */
-  /* resize: none; */
   font-family: 'Segoe UI', sans-serif;
 }
 
