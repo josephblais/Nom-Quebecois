@@ -16,11 +16,13 @@ export default function InputForm({name, setName, setShowQueb}) {
   
   const handleSubmit = e => {
     e.preventDefault()
-    setName({
-      ...name,
-      quebName: setQuebName(name.prenom, name.nomDeFamille)
-    })
-    setShowQueb(true)
+    if (name.prenom.length > 0 && name.nomDeFamille.length > 0) {
+      setName({
+        ...name,
+        quebName: setQuebName(name.prenom, name.nomDeFamille)
+      })
+      setShowQueb(true)
+    }
   }
   
 
@@ -34,6 +36,7 @@ export default function InputForm({name, setName, setShowQueb}) {
           name="prenom"
           placeholder="Prénom"
           onChange={handleChange}
+          required
         />
       </label>
       <label>
@@ -43,6 +46,7 @@ export default function InputForm({name, setName, setShowQueb}) {
           name="nomDeFamille"
           placeholder="Nom de famille"
           onChange={handleChange}
+          required
         />
       </label>
       <Button

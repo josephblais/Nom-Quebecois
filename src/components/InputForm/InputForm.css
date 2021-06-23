@@ -3,11 +3,12 @@
   flex-direction: column;
   width: 80vw;
   z-index: 1;
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 600px) {
   .inputForm {
-    font-size: 50;
+    font-size: 1em;
   }
 
 }
