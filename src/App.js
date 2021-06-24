@@ -30,7 +30,7 @@ function App() {
         setName={setName}
         setShowQueb={setShowQueb}
         />}
-        <div class="powr-hit-counter" id="a133b226_1624554965"></div>
+        <div class="powr-hit-counter" id="26106ea8_1624556353"></div>
     </div>
     );
   }
