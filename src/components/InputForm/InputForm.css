@@ -33,6 +33,6 @@ input {
   padding-left: 15px;
 }
 
-textarea:focus {
+input:focus {
   outline: none;
 }
