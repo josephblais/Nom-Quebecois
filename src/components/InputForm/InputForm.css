@@ -23,10 +23,14 @@ label {
 
 input {
   width: 60vw;
-  height: 2em;
+  height: 2.6em;
   margin-left: 2em;
   border: none;
   font-family: 'Segoe UI', sans-serif;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  padding-left: 15px;
 }
 
 textarea:focus {

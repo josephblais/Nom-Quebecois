@@ -4,7 +4,6 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  background-color: #001f97;
   color: white;
   z-index: -1;
 }

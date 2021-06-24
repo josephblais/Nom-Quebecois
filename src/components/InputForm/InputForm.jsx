@@ -48,7 +48,7 @@ export default function InputForm({name, setName, setShowQueb}) {
           name="nomDeFamille"
           placeholder="Nom de famille"
           onChange={handleChange}
-          oninvalid="this.setCustomValidity('Hé taouin, oublie pas de mettre ton nom de famille!')"
+          oninvalid="setCustomValidity('Hé taouin, oublie pas de mettre ton nom de famille!')"
           oninput="setCustomValidity('')"
           required
         />
