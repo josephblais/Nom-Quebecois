@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Nom-Quebecois/static/css/main.e6612407.chunk.css",
+    "main.css": "/Nom-Quebecois/static/css/main.7fdb7051.chunk.css",
     "main.js": "/Nom-Quebecois/static/js/main.a4b2de8a.chunk.js",
     "main.js.map": "/Nom-Quebecois/static/js/main.a4b2de8a.chunk.js.map",
     "runtime-main.js": "/Nom-Quebecois/static/js/runtime-main.810eff95.js",
@@ -10,14 +10,14 @@
     "static/js/3.eb60c0fe.chunk.js": "/Nom-Quebecois/static/js/3.eb60c0fe.chunk.js",
     "static/js/3.eb60c0fe.chunk.js.map": "/Nom-Quebecois/static/js/3.eb60c0fe.chunk.js.map",
     "index.html": "/Nom-Quebecois/index.html",
-    "static/css/main.e6612407.chunk.css.map": "/Nom-Quebecois/static/css/main.e6612407.chunk.css.map",
+    "static/css/main.7fdb7051.chunk.css.map": "/Nom-Quebecois/static/css/main.7fdb7051.chunk.css.map",
     "static/js/2.a47c19bc.chunk.js.LICENSE.txt": "/Nom-Quebecois/static/js/2.a47c19bc.chunk.js.LICENSE.txt",
     "static/media/drapeau-quebec.f9bfebb0.gif": "/Nom-Quebecois/static/media/drapeau-quebec.f9bfebb0.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.810eff95.js",
     "static/js/2.a47c19bc.chunk.js",
-    "static/css/main.e6612407.chunk.css",
+    "static/css/main.7fdb7051.chunk.css",
     "static/js/main.a4b2de8a.chunk.js"
   ]
 }
