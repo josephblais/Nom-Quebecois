@@ -1,6 +1,5 @@
 import Button from "../Button/Button"
 import { setQuebName } from "../../helpers/setQuebName"
-import { useEffect } from "react"
 import "./NameResult.css"
 
 export default function NameResult({name, setName, setShowQueb}) {

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect } from "react"
 import Button from "../Button/Button"
 import "./InputForm.css"
 import { setQuebName } from "../../helpers/setQuebName" 
@@ -6,12 +6,22 @@ import { setQuebName } from "../../helpers/setQuebName"
 
 
 export default function InputForm({name, setName, setShowQueb}) {
- 
+
+  useEffect(()=>{
+    // access the first input element and set the error message
+    document.getElementsByTagName("input")[0].setCustomValidity("Hé taouin, oublie pas ton prénom!")
+    // access the second input element and set the error message
+    document.getElementsByTagName("input")[1].setCustomValidity("Hé taouin, oublie pas ton nom de famille!")
+  },[])
+
   const handleChange = e => {
-    setName({
-      ...name,
-      [e.target.name]: e.target.value
-    })
+    if (e.target.value.length > 0) {
+      setName({
+        ...name,
+        [e.target.name]: e.target.value
+      })
+      e.target.setCustomValidity('')
+    }
   }
   
   const handleSubmit = e => {
@@ -23,8 +33,10 @@ export default function InputForm({name, setName, setShowQueb}) {
       })
       setShowQueb(true)
     }
+    
   }
   
+ 
 
   return (
     <form className="InputForm" onSubmit={handleSubmit}>
@@ -35,9 +47,7 @@ export default function InputForm({name, setName, setShowQueb}) {
           type="text" 
           name="prenom"
           placeholder="Prénom"
-          onChange={handleChange}
-          oninvalid="this.setCustomValidity('Hé taouin, oublie pas de mettre ton prénom!')"
-          oninput="setCustomValidity('')"
+          onChange={handleChange}  
           required
         />
       </label>
@@ -48,8 +58,6 @@ export default function InputForm({name, setName, setShowQueb}) {
           name="nomDeFamille"
           placeholder="Nom de famille"
           onChange={handleChange}
-          oninvalid="setCustomValidity('Hé taouin, oublie pas de mettre ton nom de famille!')"
-          oninput="setCustomValidity('')"
           required
         />
       </label>
