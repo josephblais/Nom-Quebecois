@@ -15,24 +15,25 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <img 
-          alt={"Drapeau du Québec"}
-          src={logo}
-          className="flag"
-          />
+        
     {!showQueb && <InputForm
       name={name}
       setName={setName}
       setShowQueb={setShowQueb}
-      ></InputForm>}
+      className={InputForm}
+      />}
     {showQueb && 
       <NameResult 
       name={name}
       setName={setName}
       setShowQueb={setShowQueb}
       />}
-        <div class="powr-hit-counter" id="26106ea8_1624556353" style={{opacity:"0.5"}}></div>
       </div>
+      {/* <img 
+          alt={"Drapeau du Québec"}
+          src={logo}
+          className="flag"
+          /> */}
     </div>
     );
   }
