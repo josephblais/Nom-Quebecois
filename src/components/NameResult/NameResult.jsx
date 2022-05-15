@@ -16,18 +16,20 @@ export default function NameResult({name, setName, setShowQueb}) {
   }
 
   return (
-    <>
+    <div className="container">
     <h1>Tu t'appelles: <br/><span id="queb-name">{name.quebName}</span></h1>
     <div className="twoButtons">
       <Button 
       text={"Encore!"}
       click={refreshName}
+      className="button"
       ></Button>
       <Button 
         text={"Recommencer"}
         click={clearName}
-        ></Button>
+        className="button"
+      ></Button>
     </div>
-    </>
+    </div>
   )
 }

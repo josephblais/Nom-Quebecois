@@ -17,6 +17,7 @@
  margin: 10px;
  display: flex;
  justify-content: center;
+ align-content: center;
 }
 
 .container::before {
@@ -36,6 +37,7 @@
 
 .inputForm {
   width: 500px; 
+  align-self: center;
 }
 
 /* @media screen and (min-width: 600px) {
