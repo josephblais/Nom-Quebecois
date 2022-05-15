@@ -42,7 +42,7 @@ export default function InputForm({name, setName, setShowQueb}) {
     <form className="InputForm" onSubmit={handleSubmit}>
       <h1>Trouvez votre nom Québecois</h1>
       <label>
-        Prénom:
+        <span className="labelText">Prénom</span>
         <input
           type="text" 
           name="prenom"
@@ -52,7 +52,7 @@ export default function InputForm({name, setName, setShowQueb}) {
         />
       </label>
       <label>
-        Nom de famille:
+      <span className="labelText">Nom de famille</span>
         <input
           type="text"
           name="nomDeFamille"

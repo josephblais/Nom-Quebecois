@@ -35,12 +35,8 @@
   background-size: contain;
 }
 
-.inputForm {
-  width: 500px; 
-  align-self: center;
-}
 
-/* @media screen and (min-width: 600px) {
+/* @media screen and (min-width: 730px) {
   .container {
     margin: 50%;
   }
